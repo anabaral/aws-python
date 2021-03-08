@@ -58,6 +58,7 @@ for m in ec2.describe_instances()['Reservations']:
 ```
 
 어디서 찾아 보니 다음 코드로 임시 권한을 가지고 수행이 가능하다고 함:
+참조 https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html
 ```
 ec2 = boto3.client('ec2, aws_access_key_id='AKIAYUPXW4SKDIE9D01X', aws_secret_access_key='gA+xBBs1XxxxYyyyyzzzAaaaa2ooo0pppppEaan' )
 for m in ec2.describe_instances()['Reservations']:
